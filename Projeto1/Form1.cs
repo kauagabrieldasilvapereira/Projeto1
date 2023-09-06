@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,16 +30,43 @@ namespace Projeto1
 
         private void btnsent_Click(object sender, EventArgs e)
         {
-            string name = txbNome.Text;
-            string enrollmanet = txbPront.Text;
+            Conection conection = new Conection();
+            SqlCommand sqlComand = new SqlCommand();
 
-            string message = "Nome: " + name +
-                "\nMatricula:" + enrollmanet;
-            MessageBox.Show(message,
-                "Atenção",
+            sqlComand.Connection = conection.ReturnConnection();
+            sqlComand.CommandText = @"INSERT INTO login VALUES (@nome, @email, @senha)";
+
+            sqlComand.Parameters.AddWithValue("@nome", txbNome.Text);
+            sqlComand.Parameters.AddWithValue("@email", txbPront.Text);
+            sqlComand.Parameters.AddWithValue("@senha", txbSenha.Text);
+
+            sqlComand.ExecuteNonQuery();
+
+            MessageBox.Show("Cadastro com sucesso)",
+                "AVISO",
                 MessageBoxButtons.OK,
-                MessageBoxIcon.Information
-                );
+                MessageBoxIcon.Information);
+
+            txbNome.Clear();
+            txbPront.Clear();
+            txbSenha.Clear();
+            txbNome.Clear();
+            txbNome.Clear();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPront_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
