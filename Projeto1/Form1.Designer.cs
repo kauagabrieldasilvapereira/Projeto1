@@ -104,7 +104,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Senha numerica";
+            this.label1.Text = "Senha númerica";
             // 
             // textBox2
             // 
@@ -135,7 +135,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "btnMessage";
-            this.Text = "Nome de usuari";
+            this.Text = "login";
             this.Load += new System.EventHandler(this.btnMessage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

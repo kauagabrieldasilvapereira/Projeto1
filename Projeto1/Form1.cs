@@ -52,6 +52,8 @@ namespace Projeto1
             txbSenha.Clear();
             txbNome.Clear();
             txbNome.Clear();
+
+            UpdateListView();
         }
 
         private void label1_Click(object sender, EventArgs e)
