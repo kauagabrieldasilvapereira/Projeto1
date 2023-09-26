@@ -18,6 +18,7 @@ namespace Projeto1
             InitializeComponent();
         }
 
+       
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -53,7 +54,6 @@ namespace Projeto1
             txbNome.Clear();
             txbNome.Clear();
 
-            UpdateListView();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -69,6 +69,12 @@ namespace Projeto1
         private void lblPront_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Admin admin = new Admin();
+            admin.ShowDialog();
         }
     }
 }

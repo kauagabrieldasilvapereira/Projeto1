@@ -37,6 +37,7 @@
             this.txbSenha = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNome
@@ -85,7 +86,7 @@
             this.btnsent.Name = "btnsent";
             this.btnsent.Size = new System.Drawing.Size(75, 23);
             this.btnsent.TabIndex = 7;
-            this.btnsent.Text = "Entrar";
+            this.btnsent.Text = "Cadastrar";
             this.btnsent.UseVisualStyleBackColor = true;
             this.btnsent.Click += new System.EventHandler(this.btnsent_Click);
             // 
@@ -110,11 +111,22 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.Purple;
             this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(335, 334);
+            this.textBox2.Location = new System.Drawing.Point(332, 357);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(160, 20);
             this.textBox2.TabIndex = 11;
             this.textBox2.Text = "A REDE DE TODAS AS REDES";
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.Color.DimGray;
+            this.button1.Location = new System.Drawing.Point(375, 328);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Entrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnMessage
             // 
@@ -124,6 +136,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbSenha);
@@ -151,6 +164,7 @@
         private System.Windows.Forms.TextBox txbSenha;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
