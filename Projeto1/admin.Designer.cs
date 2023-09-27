@@ -41,6 +41,7 @@
             this.txbPront = new System.Windows.Forms.TextBox();
             this.lblPront = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listadmin
@@ -52,9 +53,9 @@
             this.columnHeader4});
             this.listadmin.FullRowSelect = true;
             this.listadmin.HideSelection = false;
-            this.listadmin.Location = new System.Drawing.Point(52, 118);
+            this.listadmin.Location = new System.Drawing.Point(92, 81);
             this.listadmin.Name = "listadmin";
-            this.listadmin.Size = new System.Drawing.Size(247, 196);
+            this.listadmin.Size = new System.Drawing.Size(443, 263);
             this.listadmin.TabIndex = 0;
             this.listadmin.UseCompatibleStateImageBehavior = false;
             this.listadmin.View = System.Windows.Forms.View.Details;
@@ -69,11 +70,12 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "Nome";
+            this.columnHeader2.Width = 106;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "E-mail";
-            this.columnHeader3.Width = 71;
+            this.columnHeader3.Width = 127;
             // 
             // columnHeader4
             // 
@@ -85,7 +87,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(420, 211);
+            this.label1.Location = new System.Drawing.Point(614, 190);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 17;
@@ -94,7 +96,7 @@
             // txbSenha
             // 
             this.txbSenha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txbSenha.Location = new System.Drawing.Point(410, 227);
+            this.txbSenha.Location = new System.Drawing.Point(607, 206);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.Size = new System.Drawing.Size(100, 20);
             this.txbSenha.TabIndex = 16;
@@ -102,7 +104,7 @@
             // btnsent
             // 
             this.btnsent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnsent.Location = new System.Drawing.Point(423, 272);
+            this.btnsent.Location = new System.Drawing.Point(617, 232);
             this.btnsent.Name = "btnsent";
             this.btnsent.Size = new System.Drawing.Size(75, 23);
             this.btnsent.TabIndex = 15;
@@ -114,7 +116,7 @@
             // 
             this.txbNome.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txbNome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txbNome.Location = new System.Drawing.Point(410, 134);
+            this.txbNome.Location = new System.Drawing.Point(607, 128);
             this.txbNome.Name = "txbNome";
             this.txbNome.Size = new System.Drawing.Size(100, 20);
             this.txbNome.TabIndex = 14;
@@ -122,7 +124,7 @@
             // txbPront
             // 
             this.txbPront.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txbPront.Location = new System.Drawing.Point(410, 179);
+            this.txbPront.Location = new System.Drawing.Point(607, 167);
             this.txbPront.Name = "txbPront";
             this.txbPront.Size = new System.Drawing.Size(100, 20);
             this.txbPront.TabIndex = 13;
@@ -132,7 +134,7 @@
             this.lblPront.AutoSize = true;
             this.lblPront.BackColor = System.Drawing.Color.Black;
             this.lblPront.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPront.Location = new System.Drawing.Point(443, 163);
+            this.lblPront.Location = new System.Drawing.Point(639, 151);
             this.lblPront.Name = "lblPront";
             this.lblPront.Size = new System.Drawing.Size(36, 13);
             this.lblPront.TabIndex = 12;
@@ -144,11 +146,22 @@
             this.lblNome.BackColor = System.Drawing.Color.GhostWhite;
             this.lblNome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblNome.Image = ((System.Drawing.Image)(resources.GetObject("lblNome.Image")));
-            this.lblNome.Location = new System.Drawing.Point(420, 118);
+            this.lblNome.Location = new System.Drawing.Point(617, 112);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(81, 13);
             this.lblNome.TabIndex = 11;
             this.lblNome.Text = "Nome de usario";
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(617, 279);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Excluir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Admin
             // 
@@ -156,6 +169,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbSenha);
             this.Controls.Add(this.btnsent);
@@ -187,5 +201,6 @@
         private System.Windows.Forms.TextBox txbPront;
         private System.Windows.Forms.Label lblPront;
         private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Button button1;
     }
 }

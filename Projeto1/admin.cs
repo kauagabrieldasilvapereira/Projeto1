@@ -80,8 +80,7 @@ namespace Projeto1
             txbNome.Text = listadmin.Items[index].SubItems[1].Text;
             txbPront.Text = listadmin.Items[index].SubItems[2].Text;
             txbSenha.Text = listadmin.Items[index].SubItems[3].Text;
-           
-
+          
     }
 
         private void btnsent_Click(object sender, EventArgs e)
@@ -91,10 +90,10 @@ namespace Projeto1
 
                 sqlCommand.Connection = connection.ReturnConnection();
                 sqlCommand.CommandText = @"UPDATE login SET
-                nnCliente       = @nome, 
-                emailCliente    = @email, 
-                senhaCliente  = @senha                
-                WHERE id   = @id";
+                nnCliente = @nome, 
+                emailCliente = @email, 
+                senhaCliente = @senha                
+                WHERE id = @id";
 
                 sqlCommand.Parameters.AddWithValue("@nome", txbNome.Text);
                 sqlCommand.Parameters.AddWithValue("@email", txbPront.Text);
@@ -115,6 +114,36 @@ namespace Projeto1
                 UpdateListView();
             }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Conection connection = new Conection();
+            SqlCommand sqlCommand = new SqlCommand();
+
+            sqlCommand.Connection = connection.ReturnConnection();
+            sqlCommand .CommandText = @"DELETE FROM login WHERE Id = @id";
+            sqlCommand.Parameters.AddWithValue("@id", id);
+            try
+            {
+                sqlCommand.ExecuteNonQuery();
+            }
+            catch (Exception err)
+            {
+                throw new Exception("Erro: Problemas ao excluir usuário no banco.\n" + err.Message);
+            }
+            finally
+            {
+                connection.CloseConnection();
+
+                txbNome.Clear();
+                txbSenha.Clear();
+                txbPront.Clear();
+
+                UpdateListView();
+
+            }
+
         }
+    }
     }
 

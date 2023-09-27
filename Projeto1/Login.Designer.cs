@@ -96,6 +96,7 @@
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.Size = new System.Drawing.Size(100, 20);
             this.txbSenha.TabIndex = 9;
+            this.txbSenha.TextChanged += new System.EventHandler(this.txbSenha_TextChanged);
             // 
             // label1
             // 
@@ -120,11 +121,11 @@
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Location = new System.Drawing.Point(375, 328);
+            this.button1.Location = new System.Drawing.Point(375, 415);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Entrar";
+            this.button1.Text = "Admin";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

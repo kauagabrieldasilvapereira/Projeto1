@@ -76,5 +76,10 @@ namespace Projeto1
             Admin admin = new Admin();
             admin.ShowDialog();
         }
+
+        private void txbSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
