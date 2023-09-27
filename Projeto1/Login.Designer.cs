@@ -48,9 +48,9 @@
             this.lblNome.Image = ((System.Drawing.Image)(resources.GetObject("lblNome.Image")));
             this.lblNome.Location = new System.Drawing.Point(372, 113);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(81, 13);
+            this.lblNome.Size = new System.Drawing.Size(87, 13);
             this.lblNome.TabIndex = 3;
-            this.lblNome.Text = "Nome de usario";
+            this.lblNome.Text = "Nome de usuario";
             this.lblNome.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblPront

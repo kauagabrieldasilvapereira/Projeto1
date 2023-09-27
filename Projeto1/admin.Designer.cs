@@ -65,7 +65,7 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "id";
-            this.columnHeader1.Width = 29;
+            this.columnHeader1.Width = 0;
             // 
             // columnHeader2
             // 
@@ -75,12 +75,12 @@
             // columnHeader3
             // 
             this.columnHeader3.Text = "E-mail";
-            this.columnHeader3.Width = 127;
+            this.columnHeader3.Width = 169;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Senha";
-            this.columnHeader4.Width = 79;
+            this.columnHeader4.Width = 187;
             // 
             // label1
             // 
@@ -148,9 +148,10 @@
             this.lblNome.Image = ((System.Drawing.Image)(resources.GetObject("lblNome.Image")));
             this.lblNome.Location = new System.Drawing.Point(617, 112);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(81, 13);
+            this.lblNome.Size = new System.Drawing.Size(87, 13);
             this.lblNome.TabIndex = 11;
-            this.lblNome.Text = "Nome de usario";
+            this.lblNome.Text = "Nome de usuario";
+            this.lblNome.Click += new System.EventHandler(this.lblNome_Click);
             // 
             // button1
             // 
